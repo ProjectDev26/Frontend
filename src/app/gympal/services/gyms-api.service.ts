@@ -6,18 +6,16 @@ import {HttpClient} from "@angular/common/http";
 })
 export class GymsApiService {
 
-  apikey = '';
-  baseUrl = '';
+  baseUrl = 'https://my-json-server.typicode.com/notfakeangel26/flexpal';
 
   constructor(private http: HttpClient) { }
 
   getCoaches(){
-    //return this.http.get(`${this.baseUrl}/coaches?apikey=${this.apikey}`);
-    return this.http.get(`https://jsonplaceholder.typicode.com/users`);
+    return this.http.get(`${this.baseUrl}/coaches`);
   }
 
   getCoachById(coachId: string){
-    return this.http.get(`https://jsonplaceholder.typicode.com/users?id=${coachId}`);
+    return this.http.get(`${this.baseUrl}/coaches?id=${coachId}`);
   }
 
 }
