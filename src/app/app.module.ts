@@ -21,6 +21,7 @@ import {ListCoachesComponent} from "./gympal/pages/list-coaches/list-coaches.com
 import {ListNutritionistsComponent} from "./gympal/pages/list-nutritionists/list-nutritionists.component";
 import {DetailCoachComponent} from "./gympal/pages/detail-coach/detail-coach.component";
 import {SuscriptionsComponent} from "./gympal/pages/suscriptions/suscriptions.component";
+import { DetailNutritionistComponent } from './gympal/pages/detail-nutritionist/detail-nutritionist.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import {SuscriptionsComponent} from "./gympal/pages/suscriptions/suscriptions.co
     ListCoachesComponent,
     ListNutritionistsComponent,
     DetailCoachComponent,
-    SuscriptionsComponent
+    SuscriptionsComponent,
+    DetailNutritionistComponent
   ],
     imports: [
         BrowserModule,
