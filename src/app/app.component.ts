@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'FrontEndAppOpenSource';
+  title = 'gymPal';
+  options = [
+    {path: '/home', title: 'Home'},
+    {path: '/suscriptions', title: 'Suscriptions'},
+    {path: '/testimonials', title: 'Testimonials'},
+    {path: '/professionals', title: 'Professionals'}
+  ]
 }
