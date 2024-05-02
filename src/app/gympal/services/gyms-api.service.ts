@@ -7,6 +7,7 @@ import {HttpClient} from "@angular/common/http";
 export class GymsApiService {
 
   baseUrl = 'https://my-json-server.typicode.com/notfakeangel26/flexpal';
+  baseUrlN = 'https://my-json-server.typicode.com/notfakeangel26/gympal';
 
   constructor(private http: HttpClient) { }
 
@@ -16,6 +17,14 @@ export class GymsApiService {
 
   getCoachById(coachId: string){
     return this.http.get(`${this.baseUrl}/coaches?id=${coachId}`);
+  }
+
+  getNutritionists(){
+    return this.http.get(`${this.baseUrlN}/nutritionists`);
+  }
+
+  getNutritionistsById(nutritionistsId: string){
+    return this.http.get(`${this.baseUrlN}/nutritionists?id=${nutritionistsId}`);
   }
 
 }
