@@ -7,7 +7,7 @@ import {ListCoachesComponent} from "./gympal/pages/list-coaches/list-coaches.com
 import {ListNutritionistsComponent} from "./gympal/pages/list-nutritionists/list-nutritionists.component";
 import {DetailCoachComponent} from "./gympal/pages/detail-coach/detail-coach.component";
 import {SuscriptionsComponent} from "./gympal/pages/suscriptions/suscriptions.component";
-
+import {ProfileComponent} from "./gympal/pages/profile/profile.component";
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -15,8 +15,9 @@ const routes: Routes = [
   {path: 'list-coaches', component: ListCoachesComponent},
   {path: 'list-nutritionists', component: ListNutritionistsComponent},
   {path: 'detail-coach/:id', component: DetailCoachComponent},
-  {path: 'suscriptions', component: SuscriptionsComponent},
-  {path: '**', component: PageNotFoundComponent}
+  {path: 'subscriptions', component: SuscriptionsComponent},
+  {path: 'profile', component: ProfileComponent},
+  {path: '**', component: PageNotFoundComponent},
 ];
 
 @NgModule({

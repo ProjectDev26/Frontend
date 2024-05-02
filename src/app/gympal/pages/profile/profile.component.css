@@ -1,0 +1,72 @@
+.example-card {
+  display: flex;
+  flex-direction: column; /* Alinea los elementos verticalmente */
+}
+
+.columns-container {
+  display: flex;
+  justify-content: center; /* Align items horizontally */
+}
+
+.column {
+  flex: 1; /* Toma el mismo espacio */
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+  width: 500px; /* Ajusta el ancho */
+  height: 500px; /* Ajusta el alto */
+  border-radius: 50%; /* Hace que la imagen sea circular */
+  overflow: hidden; /* Oculta el desbordamiento para asegurar la forma circular */
+}
+
+.subscription-card {
+  width: auto;
+  display: flex;
+  padding: 20px;
+  margin-bottom: 100px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.subscription-card .column:first-child {
+  margin-right: 80px;
+}
+
+.purple-background {
+  background-color: #283593; /* Color de fondo púrpura */
+}
+
+.purple-background h1,
+.purple-background h2,
+.purple-background p {
+  color: white; /* Letras blancas */
+}
+
+.mat-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+}
+
+
+.mat-card-content p {
+  margin-bottom: 10px; /* Add space between paragraphs */
+}
+
+.subscription-card button {
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+  height: 50px;
+  border-radius: 15px;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+.margin-last {
+  margin-top: 120px;
+  margin-left: 30px;
+  margin-right: 20px;
+}

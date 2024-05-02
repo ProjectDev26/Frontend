@@ -9,8 +9,8 @@ export class AppComponent {
   title = 'gymPal';
   options = [
     {path: '/home', title: 'Home'},
-    {path: '/suscriptions', title: 'Suscriptions'},
-    {path: '/testimonials', title: 'Testimonials'},
-    {path: '/professionals', title: 'Professionals'}
+    {path: '/subscriptions', title: 'Renew'},
+    {path: '/professionals', title: 'Professionals'},
+    {path: '/profile', title: 'Profile'},
   ]
 }
