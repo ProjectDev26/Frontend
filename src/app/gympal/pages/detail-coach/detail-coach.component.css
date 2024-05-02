@@ -1,0 +1,31 @@
+.card-container {
+  display: flex;
+  align-items: center; /* Centra verticalmente los elementos */
+  justify-content: center; /* Centra horizontalmente los elementos */
+  margin-top: 50px; /* Ajusta la altura según sea necesario */
+}
+
+.card-content {
+  text-align: center; /* Centra el contenido dentro de la tarjeta */
+  max-width: 600px;
+}
+
+.coach-image {
+  width: 250px; /* Ajusta el ancho según sea necesario */
+  height: 250px; /* Ajusta la altura según sea necesario */
+  border-radius: 50%; /* Hace que la imagen sea circular */
+}
+
+.coach-name {
+  margin-top: 40px; /* Espaciado entre la imagen y el nombre */
+  margin-bottom: 40px; /* Espaciado entre el nombre y el texto */
+  font-size: 40px;
+}
+
+.coach-description {
+  margin-bottom: 40px; /* Espaciado entre el texto y el botón */
+}
+
+.contact-button {
+  margin-bottom: 50px; /* Espaciado adicional en la parte inferior */
+}
