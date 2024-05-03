@@ -1,5 +1,6 @@
 .subscription-container {
   display: flex;
+  background-color: #dcdcdc;
 }
 
 .plan-time{
@@ -21,14 +22,15 @@
   margin-bottom: 30px;
   text-align: center;
   font-size: 35px;
+  font-family: Arial, serif;
 }
 
 .blue-background {
-  background-color: #3949AB; /* Color de fondo azul */
+  background-color:  #44547c; /* Color de fondo azul */
 }
 
 .start-button-blue {
-  color: #283593; /* Color de texto azul para el botón del primer mat-card */
+  background-color: #E5EDF1/* Color de texto azul para el botón del primer mat-card */
 }
 
 .start-button-purple {
@@ -43,17 +45,16 @@
 }
 
 .purple-background {
-  background-color: #283593; /* Color de fondo púrpura */
+  background-color:  #143c6c; /* Color de fondo púrpura */
 }
 
 .purple-background h1,
 .purple-background h2,
 .purple-background p,
 .purple-background .plan-time {
-  color: white; /* Letras blancas */
+  color: white;
 }
 
-/* Estilos para los botones */
 .subscription-card button {
   display: block;
   margin: 0 auto;
@@ -88,10 +89,11 @@
   margin-bottom: 20px;
   text-align: center;
   display: inline;
+  color: #747474;
 }
 
 .subscription-price3{
-  margin-left: 50px;
+  margin-left: 55px;
   font-size: 34px;
   margin-bottom: 20px;
   text-align: center;
@@ -102,8 +104,12 @@
   height: 450px;
   width: 350px;
   padding: 20px;
-  border: 1px solid;
-  border-radius: 15px;
+  border-radius: 10px;
+}
+
+.color-button {
+  background-color: #143c6c;
+  color: white;
 }
 
 .subscription-card button {
@@ -117,7 +123,7 @@
 }
 
 .margin-middle {
-  border: 2px solid #283593;
+  border: 2px solid #1a4471;
   margin-top: 70px;
   margin-left: 10px;
   margin-right: 10px;

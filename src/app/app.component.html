@@ -1,10 +1,21 @@
-<mat-toolbar color="primary" class="toolbar">
+<mat-toolbar class="toolbar">
+  <img src="/assets/logo2.png" alt="logo.png" class="logo-image">
   <h1 class="title-page">FlexPal</h1>
-    <img src="/assets/logo2.png" alt="logo.png" class="logo-image">
   <div class="mat-spacer"></div>
 
-  <a mat-button *ngFor="let option of options"
-     [routerLink]="option.path" >{{ option.title }}</a>
+  <a mat-button class="routes-page" [routerLink]="'/home'">
+    <mat-icon class="color">home</mat-icon>
+  </a>
+  <a mat-button class="routes-page" [routerLink]="'/subscriptions'">
+    <mat-icon class="color">attach_money</mat-icon>
+
+  </a>
+  <a mat-button class="routes-page" [routerLink]="'/professionals'">
+    <mat-icon class="color">favorite_border</mat-icon>
+  </a>
+  <a mat-button class="routes-pages" [routerLink]="'/profile'">
+    <mat-icon class="color">person</mat-icon>
+  </a>
 
 </mat-toolbar>
 

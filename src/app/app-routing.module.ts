@@ -8,6 +8,7 @@ import {ListNutritionistsComponent} from "./gympal/pages/list-nutritionists/list
 import {DetailCoachComponent} from "./gympal/pages/detail-coach/detail-coach.component";
 import {SuscriptionsComponent} from "./gympal/pages/suscriptions/suscriptions.component";
 import {ProfileComponent} from "./gympal/pages/profile/profile.component";
+import {DetailNutritionistComponent} from "./gympal/pages/detail-nutritionist/detail-nutritionist.component";
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -15,6 +16,7 @@ const routes: Routes = [
   {path: 'list-coaches', component: ListCoachesComponent},
   {path: 'list-nutritionists', component: ListNutritionistsComponent},
   {path: 'detail-coach/:id', component: DetailCoachComponent},
+  {path: 'detail-nutritionist/:id', component: DetailNutritionistComponent},
   {path: 'subscriptions', component: SuscriptionsComponent},
   {path: 'profile', component: ProfileComponent},
   {path: '**', component: PageNotFoundComponent},

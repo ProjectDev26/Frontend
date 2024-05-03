@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'gymPal';
+  paths = '/home';
   options = [
     {path: '/home', title: 'Home'},
     {path: '/subscriptions', title: 'Renew'},
