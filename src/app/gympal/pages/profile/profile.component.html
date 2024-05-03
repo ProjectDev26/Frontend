@@ -1,18 +1,46 @@
 <mat-card class="subscription-card purple-background margin-last">
-  <div class="columns-container">
-    <div class="column">
-      <mat-card-header>
-        <mat-card-title>My profile</mat-card-title>
-        <div mat-card-avatar class="example-header-image"></div>
-      </mat-card-header>
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title class="title-profile">My profile</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="field">
+      <div class="label-value-container">
+        <h1 class="label">Name:</h1>
+        <p class="value">John Doe</p>
+      </div>
+      <a class="change-link" href="#">Change name</a>
     </div>
-    <div class="column">
-      <mat-card-content>
-        <h1>Name:</h1>
-        <h1>Email:</h1>
-        <h1>Password:</h1>
-        <h1>Account:</h1>
-      </mat-card-content>
+    <div class="field">
+      <div class="label-value-container">
+        <h1 class="label">Email:</h1>
+        <p class="value">johndoe&commat;example.com</p>
+      </div>
+      <a class="change-link" href="#">Change email</a>
     </div>
-  </div>
+    <div class="field">
+      <div class="label-value-container">
+        <h1 class="label">Password:</h1>
+        <p class="value">
+          <mat-icon>fiber_manual_record</mat-icon>
+          <mat-icon>fiber_manual_record</mat-icon>
+          <mat-icon>fiber_manual_record</mat-icon>
+          <mat-icon>fiber_manual_record</mat-icon>
+          <mat-icon>fiber_manual_record</mat-icon>
+          <mat-icon>visibility_off</mat-icon>
+        </p>
+      </div>
+      <a class="change-link" href="#">Change password</a>
+    </div>
+    <div class="field">
+      <div class="label-value-container">
+        <h1 class="label">Account:</h1>
+      </div>
+      <a class="delete-link" href="#">Delete account</a>
+    </div>
+    <div class="button-container">
+      <button mat-button class="action-button">Establecer objetivos</button>
+      <button mat-button class="action-button2">Mejorar plan</button>
+    </div>
+  </mat-card-content>
 </mat-card>

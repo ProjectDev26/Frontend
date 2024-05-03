@@ -1,31 +1,51 @@
 .card-container {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-top: 50px;
+  background-color: #dcdcdc;
 }
 
 .card-content {
+  background-color: white;
+  padding-top: 3%;
+  padding-bottom: 3%;
   text-align: center;
-  max-width: 600px;
+  margin-top: 4.5%;
+  margin-bottom: 4.5%;
+  width: 77%;
+  border-radius: 20px;
+  display: flex; /* Usa flexbox para centrar verticalmente */
+  flex-direction: column; /* Alinea los elementos en una columna */
+  justify-content: center; /* Centra verticalmente los elementos */
 }
+
 
 .coach-image {
   width: 250px;
   height: 250px;
   border-radius: 50%;
+  margin: auto;
 }
 
 .coach-name {
+  color:  #143c6c;
   margin-top: 40px;
   margin-bottom: 20px;
   font-size: 40px;
 }
 
 .coach-description {
-  margin-bottom: 40px;
+  width: 40%;
+  margin: auto;
+  font-size: 16px;
 }
 
 .contact-button {
-  margin-bottom: 50px;
+  background-color: #44547c;
+  font-family: "Calibri Light", serif;
+  color: white;
+  width: 145px;
+  height: 30px;
+  margin-left: 43%;
+  margin-top: 25px;
+  border-radius: 20px;
 }
