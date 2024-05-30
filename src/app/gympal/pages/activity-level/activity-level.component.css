@@ -1,0 +1,61 @@
+:root {
+  font-size: 16px; /* Base font-size, 1rem = 16px */
+}
+
+.activity-level {
+  background: #dcdcdc;
+  height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.activity-leve__container {
+  width: 80vw;
+  height: 500px;
+  max-width: 50rem;
+  max-height: 80rem;
+  background: #ffffff;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+@media (max-width: 600px) {
+  .activity-leve__container {
+    width: 100%;/* Adjusted for smaller screens */
+    height: 15rem; /* Adjusted for smaller screens */
+  }
+}
+
+.activity-leve__container-button {
+  height: 100%;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.title {
+  color: #42507D;
+  font-size: 2em;
+  text-align: center;
+  line-height: 1;
+  margin: 0;
+  padding: 1px;
+}
+
+.button {
+  height: 4rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}

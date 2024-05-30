@@ -11,12 +11,12 @@ export class ProfessionalsComponent {
   constructor(private route: ActivatedRoute, private router: Router) {
   }
 
-  navigateToListCoaches(){
-    this.router.navigate(['list-coaches']).then();
+  navigateToActivityLevel(){
+    this.router.navigate(['activity-level']).then();
   }
 
-  navigateToListNutritionists(){
-    this.router.navigate(['list-nutritionists']).then();
+  navigateToFoodSelection(){
+    this.router.navigate(['food-selection']).then();
   }
 
 }
