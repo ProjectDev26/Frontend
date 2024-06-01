@@ -1,3 +1,11 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #D9D9D9;
+  height: 680px;
+}
+
 .small-image {
   max-width: 400px;
   height: auto;
@@ -5,7 +13,8 @@
   border-radius: 20px;
 }
 mat-card {
-  background-color: #dcdcdc; /* Establece el color de fondo */
+  background-color: #D9D9D9;
+
 }
 
 .image-button-container {
