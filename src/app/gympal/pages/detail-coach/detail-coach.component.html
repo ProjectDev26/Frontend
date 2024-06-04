@@ -1,9 +1,34 @@
-<mat-card class="card-container">
-    <div class="card-content">
-        <img src="/assets/iconouser.jpg" alt="{{ coach.name }}" class="coach-image">
-        <h1 class="coach-name">{{ coach.name }}</h1>
-        <p>{{ coach.email }}</p>
-        <p class="coach-description">{{ coach.longPhrases }}</p>
-        <a mat-button class="contact-button">Contactar</a>
+<body>
+<div class="profile-card">
+  <div class="profile-header">
+    <div class="profile-image"></div>
+    <div class="profile-info">
+      <h1>{{ coach.name }}</h1>
+      <p>{{ coach.longPhrases }}</p>
+      <button class="contact-button">Contactar</button>
     </div>
-</mat-card>
+  </div>
+  <div class="profile-body">
+    <div class="experience">
+      <h2 style="color: #000">Experience</h2>
+      <p>10 years of experience in personal training and coaching.</p>
+    </div>
+    <div class="credentials">
+      <h2 style="color: #000">Credentials</h2>
+      <ul>
+        <li>Personal Training Certification: Certified by the National Academy of Sports Medicine (NASM).</li>
+        <li>Sports Nutrition Certification: Certified by Precision Nutrition.</li>
+        <li>Strength Training and Conditioning Certification: Certified by the National Strength and Conditioning Association (NSCA).</li>
+      </ul>
+    </div>
+    <div class="expertise">
+      <h2 style="color: #000">Areas of expertise</h2>
+      <ul>
+        <li>Strength Training: Design of personalized programs for the development of strength and muscle hypertrophy.</li>
+        <li>Sports Nutrition: Diet planning and nutritional strategies to improve performance and body composition.</li>
+        <li>Endurance Training: Preparing athletes for endurance events such as marathons, triathlons and cycling competitions.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
