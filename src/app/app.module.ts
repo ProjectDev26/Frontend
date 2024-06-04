@@ -22,6 +22,7 @@ import {ListNutritionistsComponent} from "./gympal/pages/list-nutritionists/list
 import {DetailCoachComponent} from "./gympal/pages/detail-coach/detail-coach.component";
 import {SuscriptionsComponent} from "./gympal/pages/suscriptions/suscriptions.component";
 import { ProfileComponent } from './gympal/pages/profile/profile.component';
+import {MatMenu, MatMenuItem, MatMenuTrigger} from "@angular/material/menu";
 
 @NgModule({
   declarations: [
@@ -37,19 +38,22 @@ import { ProfileComponent } from './gympal/pages/profile/profile.component';
     SuscriptionsComponent,
     ProfileComponent
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        MatToolbar,
-        MatAnchor,
-        MatCardHeader,
-        MatCardModule,
-        MatCardContent,
-        NgOptimizedImage,
-        MatButton,
-        HttpClientModule,
-        MatIcon
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    MatToolbar,
+    MatAnchor,
+    MatCardHeader,
+    MatCardModule,
+    MatCardContent,
+    NgOptimizedImage,
+    MatButton,
+    HttpClientModule,
+    MatIcon,
+    MatMenuItem,
+    MatMenuTrigger,
+    MatMenu
+  ],
   providers: [
     provideAnimationsAsync(),
     CoachDataService,

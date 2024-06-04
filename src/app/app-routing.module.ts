@@ -9,6 +9,8 @@ import {DetailCoachComponent} from "./gympal/pages/detail-coach/detail-coach.com
 import {SuscriptionsComponent} from "./gympal/pages/suscriptions/suscriptions.component";
 import {ProfileComponent} from "./gympal/pages/profile/profile.component";
 import {DetailNutritionistComponent} from "./gympal/pages/detail-nutritionist/detail-nutritionist.component";
+import {CommunityComponent} from "./gympal/pages/community/community.component";
+import {TestimonialsComponent} from "./gympal/pages/testimonials/testimonials.component";
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -18,6 +20,8 @@ const routes: Routes = [
   {path: 'detail-coach/:id', component: DetailCoachComponent},
   {path: 'detail-nutritionist/:id', component: DetailNutritionistComponent},
   {path: 'subscriptions', component: SuscriptionsComponent},
+  {path: 'community', component: CommunityComponent},
+  {path: 'testimonials', component: TestimonialsComponent},
   {path: 'profile', component: ProfileComponent},
   {path: '**', component: PageNotFoundComponent},
 ];
