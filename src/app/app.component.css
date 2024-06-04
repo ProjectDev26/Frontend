@@ -49,6 +49,9 @@
 .toolbar {
   height: 63px;
   width: 100%;
+  max-width: 1500px;
+  margin: auto;
+  background-color: #163F6F;
 }
 
 .logo-image {
