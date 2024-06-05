@@ -1,46 +1,24 @@
-<mat-card class="subscription-card purple-background margin-last">
-  <mat-card-header>
-    <div mat-card-avatar class="example-header-image"></div>
-    <mat-card-title class="title-profile">My profile</mat-card-title>
-  </mat-card-header>
-  <mat-card-content>
-    <div class="field">
-      <div class="label-value-container">
-        <h1 class="label">Name:</h1>
-        <p class="value">John Doe</p>
+<body>
+<div class="profile-container">
+  <h2>My profile</h2>
+  <div class="profile-content">
+    <div class="profile-image-section">
+      <div class="profile-image"></div>
+      <div class="profile-status">
+        <a href="#">PREMIUM</a>
       </div>
-      <a class="change-link" href="#">Change name</a>
+      <button class="programs-button">Programs</button>
     </div>
-    <div class="field">
-      <div class="label-value-container">
-        <h1 class="label">Email:</h1>
-        <p class="value">johndoe&commat;example.com</p>
-      </div>
-      <a class="change-link" href="#">Change email</a>
+    <div class="profile-details-section">
+      <p><strong style="font-size: 18px">Name:</strong> Jhon Salas <a href="#">Change name</a></p>
+      <p><strong style="font-size: 18px">Email:</strong> salJHONasyahoo.com <a href="#">Change email</a></p>
+      <p><strong style="font-size: 18px">Password:</strong> •••••••• <a href="#">Change password</a></p>
+      <p><strong style="font-size: 18px">Account:</strong> <a href="#" class="delete-account">Delete account</a></p>
     </div>
-    <div class="field">
-      <div class="label-value-container">
-        <h1 class="label">Password:</h1>
-        <p class="value">
-          <mat-icon>fiber_manual_record</mat-icon>
-          <mat-icon>fiber_manual_record</mat-icon>
-          <mat-icon>fiber_manual_record</mat-icon>
-          <mat-icon>fiber_manual_record</mat-icon>
-          <mat-icon>fiber_manual_record</mat-icon>
-          <mat-icon>visibility_off</mat-icon>
-        </p>
-      </div>
-      <a class="change-link" href="#">Change password</a>
-    </div>
-    <div class="field">
-      <div class="label-value-container">
-        <h1 class="label">Account:</h1>
-      </div>
-      <a class="delete-link" href="#">Delete account</a>
-    </div>
-    <div class="button-container">
-      <button mat-button class="action-button">Establecer objetivos</button>
-      <button mat-button class="action-button2">Mejorar plan</button>
-    </div>
-  </mat-card-content>
-</mat-card>
+  </div>
+  <div class="profile-actions">
+    <button class="action-button primary">Establecer objetivos</button>
+    <button class="action-button secondary">Mejorar plan</button>
+  </div>
+</div>
+</body>
