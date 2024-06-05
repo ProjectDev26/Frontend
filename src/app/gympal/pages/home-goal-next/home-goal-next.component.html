@@ -1,0 +1,23 @@
+<body>
+<div class="form-container">
+  <h2>Goals!</h2>
+  <form>
+    <div class="form-group">
+      <label for="current-weight">Current weight</label>
+      <div class="input-group">
+        <input type="number" id="current-weight" name="current-weight" placeholder="Weight">
+        <span>kg</span>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="target-weight">Target weight</label>
+      <div class="input-group">
+        <input type="number" id="target-weight" name="target-weight" placeholder="Weight">
+        <span>kg</span>
+      </div>
+    </div>
+    <p class="note">(It should be less than the current one because you have selected the "loss weight" option.)</p>
+    <button type="submit" (click)="navigateToProfessionals()">Continue</button>
+  </form>
+</div>
+</body>
