@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-suscriptions',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrl: './suscriptions.component.css'
 })
 export class SuscriptionsComponent {
+
+  constructor(private router: Router) {
+  }
+
+  navigateToPayments(){
+    this.router.navigate(['subscriptions/payments']).then();
+  }
 
 }
