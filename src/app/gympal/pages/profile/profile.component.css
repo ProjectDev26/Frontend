@@ -50,6 +50,7 @@ h2 {
   color: #42507D;
   text-decoration: none;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .programs-button {

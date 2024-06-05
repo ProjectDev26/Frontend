@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #e0e0e0;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+.card h1 {
+  font-size: 1.5em;
+  color: #0d355c;
+  margin-bottom: 20px;
+}
+
+.card .overview h2 {
+  font-size: 1.2em;
+  color: #a9a9a9;
+  text-align: left;
+}
+
+.card p {
+  text-align: left;
+  line-height: 1.6;
+}
+
+.card button.see-challenge {
+  background-color: #0d355c;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.card button.see-challenge:hover {
+  background-color: #0b2e4a;
+}

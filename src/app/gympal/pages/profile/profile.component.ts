@@ -14,4 +14,8 @@ export class ProfileComponent {
   navigateToPrograms(){
     this.router.navigate(['profile/programs']).then();
   }
+
+  navigateToPremium(){
+    this.router.navigate(['profile/premium']).then();
+  }
 }
