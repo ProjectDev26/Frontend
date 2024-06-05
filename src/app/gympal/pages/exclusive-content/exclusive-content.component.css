@@ -1,0 +1,17 @@
+.container-exclusive {
+  width: 90%;
+  max-width: 1400px;
+  margin: 30px auto;
+}
+
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.container-exclusive h1 {
+  font-size: 30px;
+  font-weight: bolder;
+  margin-top: 30px;
+}

@@ -14,4 +14,12 @@ export class PremiumComponent {
   navigateToChallenge(){
     this.router.navigate(['profile/premium/challenge']).then();
   }
+
+  navigateToExclusiveContent(){
+    this.router.navigate(['profile/premium/exclusive-content']).then();
+  }
+
+  navigateToProcess(){
+    this.router.navigate(['profile/premium/process']).then();
+  }
 }
