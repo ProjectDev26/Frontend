@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
   selector: 'app-process',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class ProcessComponent {
 
+  constructor(private router: Router) {
+  }
+  navigateToAnalysis() {
+    this.router.navigate(['profile/premium/process/analysis']).then();
+  }
 }

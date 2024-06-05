@@ -4,6 +4,7 @@ import {ActivatedRoute, Router} from "@angular/router";
 @Component({
   selector: 'app-food-selection',
   templateUrl: './food-selection.component.html',
+  standalone: true,
   styleUrl: './food-selection.component.css'
 })
 export class FoodSelectionComponent {
