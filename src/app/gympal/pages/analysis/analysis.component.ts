@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-analysis',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AnalysisComponent {
 
+  constructor(private router: Router) {}
+
+  goBack(): void {
+    this.router.navigate(['profile/premium/process']).then();
+  }
 }

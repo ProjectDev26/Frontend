@@ -40,6 +40,11 @@ h2 {
   width: 150px;
 }
 
+.gender-button.active {
+  background-color: #155293 ;
+  border-color: #000;
+}
+
 form {
   display: flex;
   flex-direction: column;

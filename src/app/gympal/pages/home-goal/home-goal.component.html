@@ -2,8 +2,8 @@
 <div class="container">
   <h2>Goals!</h2>
   <div class="gender-container">
-    <button class="gender-button">Male</button>
-    <button class="gender-button">Female</button>
+    <button class="gender-button" [ngClass]="{'active': selectedGenderIndex === 0}" (click)="selectGender(0)">Male</button>
+    <button class="gender-button" [ngClass]="{'active': selectedGenderIndex === 1}" (click)="selectGender(1)">Female</button>
   </div>
   <form>
     <input type="text" placeholder="Day of birth">

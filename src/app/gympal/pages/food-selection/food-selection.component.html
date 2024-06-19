@@ -2,97 +2,102 @@
   <div class="container">
     <h2 style="color: #42507D">What foods do you have available or want to include?</h2>
 
+    <!-- Proteins -->
     <div class="section">
       <div class="header">
         <h3>Proteins</h3>
-        <button class="select-all">Select all</button>
+        <button class="select-all" (click)="selectAll('protein')">Select all</button>
       </div>
       <div class="options">
-        <button>Chicken</button>
-        <button>Meat</button>
-        <button>Fish</button>
-        <button>Tuna</button>
-        <button>Egg</button>
-        <button>Turkey</button>
-        <button>Pork</button>
+        <button [ngClass]="{'active': isSelected('protein', 'Chicken')}" (click)="toggleFood('protein', 'Chicken')">Chicken</button>
+        <button [ngClass]="{'active': isSelected('protein', 'Meat')}" (click)="toggleFood('protein', 'Meat')">Meat</button>
+        <button [ngClass]="{'active': isSelected('protein', 'Fish')}" (click)="toggleFood('protein', 'Fish')">Fish</button>
+        <button [ngClass]="{'active': isSelected('protein', 'Tuna')}" (click)="toggleFood('protein', 'Tuna')">Tuna</button>
+        <button [ngClass]="{'active': isSelected('protein', 'Egg')}" (click)="toggleFood('protein', 'Egg')">Egg</button>
+        <button [ngClass]="{'active': isSelected('protein', 'Turkey')}" (click)="toggleFood('protein', 'Turkey')">Turkey</button>
+        <button [ngClass]="{'active': isSelected('protein', 'Pork')}" (click)="toggleFood('protein', 'Pork')">Pork</button>
       </div>
     </div>
 
+    <!-- Carbohydrates -->
     <div class="section">
       <div class="header">
         <h3>Carbohydrates</h3>
-        <button class="select-all">Select all</button>
+        <button class="select-all" (click)="selectAll('carb')">Select all</button>
       </div>
       <div class="options">
-        <button>Rice</button>
-        <button>Potato</button>
-        <button>Sweet potato</button>
-        <button>Yucca</button>
-        <button>Beans</button>
-        <button>Peas</button>
-        <button>Quinoa</button>
-        <button>Pasta</button>
-        <button>Corn</button>
-        <button>Oats</button>
-        <button>Bread</button>
-        <button>Cereal</button>
+        <button [ngClass]="{'active': isSelected('carb', 'Rice')}" (click)="toggleFood('carb', 'Rice')">Rice</button>
+        <button [ngClass]="{'active': isSelected('carb', 'Potato')}" (click)="toggleFood('carb', 'Potato')">Potato</button>
+        <button [ngClass]="{'active': isSelected('carb', 'Sweet potato')}" (click)="toggleFood('carb', 'Sweet potato')">Sweet potato</button>
+        <button [ngClass]="{'active': isSelected('carb', 'Yucca')}" (click)="toggleFood('carb', 'Yucca')">Yucca</button>
+        <button [ngClass]="{'active': isSelected('carb', 'Beans')}" (click)="toggleFood('carb', 'Beans')">Beans</button>
+        <button [ngClass]="{'active': isSelected('carb', 'Peas')}" (click)="toggleFood('carb', 'Peas')">Peas</button>
+        <button [ngClass]="{'active': isSelected('carb', 'Quinoa')}" (click)="toggleFood('carb', 'Quinoa')">Quinoa</button>
+        <button [ngClass]="{'active': isSelected('carb', 'Pasta')}" (click)="toggleFood('carb', 'Pasta')">Pasta</button>
+        <button [ngClass]="{'active': isSelected('carb', 'Corn')}" (click)="toggleFood('carb', 'Corn')">Corn</button>
+        <button [ngClass]="{'active': isSelected('carb', 'Oats')}" (click)="toggleFood('carb', 'Oats')">Oats</button>
+        <button [ngClass]="{'active': isSelected('carb', 'Bread')}" (click)="toggleFood('carb', 'Bread')">Bread</button>
+        <button [ngClass]="{'active': isSelected('carb', 'Cereal')}" (click)="toggleFood('carb', 'Cereal')">Cereal</button>
       </div>
     </div>
 
+    <!-- Fats -->
     <div class="section">
       <div class="header">
         <h3>Fats</h3>
-        <button class="select-all">Select all</button>
+        <button class="select-all" (click)="selectAll('fat')">Select all</button>
       </div>
       <div class="options">
-        <button>Avocado</button>
-        <button>Peanut</button>
-        <button>Almond</button>
-        <button>Nuts</button>
-        <button>Olives</button>
-        <button>Chocolate</button>
-        <button>Chia</button>
+        <button [ngClass]="{'active': isSelected('fat', 'Avocado')}" (click)="toggleFood('fat', 'Avocado')">Avocado</button>
+        <button [ngClass]="{'active': isSelected('fat', 'Peanut')}" (click)="toggleFood('fat', 'Peanut')">Peanut</button>
+        <button [ngClass]="{'active': isSelected('fat', 'Almond')}" (click)="toggleFood('fat', 'Almond')">Almond</button>
+        <button [ngClass]="{'active': isSelected('fat', 'Nuts')}" (click)="toggleFood('fat', 'Nuts')">Nuts</button>
+        <button [ngClass]="{'active': isSelected('fat', 'Olives')}" (click)="toggleFood('fat', 'Olives')">Olives</button>
+        <button [ngClass]="{'active': isSelected('fat', 'Chocolate')}" (click)="toggleFood('fat', 'Chocolate')">Chocolate</button>
+        <button [ngClass]="{'active': isSelected('fat', 'Chia')}" (click)="toggleFood('fat', 'Chia')">Chia</button>
       </div>
     </div>
 
+    <!-- Dairy -->
     <div class="section">
       <div class="header">
         <h3>Dairy</h3>
-        <button class="select-all">Select all</button>
+        <button class="select-all" (click)="selectAll('dairy')">Select all</button>
       </div>
       <div class="options">
-        <button>Milk</button>
-        <button>Yogurt</button>
-        <button>White Cheese</button>
-        <button>Cheese</button>
-        <button>Almond milk</button>
-        <button>Coconut milk</button>
-        <button>Soy milk</button>
+        <button [ngClass]="{'active': isSelected('dairy', 'Milk')}" (click)="toggleFood('dairy', 'Milk')">Milk</button>
+        <button [ngClass]="{'active': isSelected('dairy', 'Yogurt')}" (click)="toggleFood('dairy', 'Yogurt')">Yogurt</button>
+        <button [ngClass]="{'active': isSelected('dairy', 'White Cheese')}" (click)="toggleFood('dairy', 'White Cheese')">White Cheese</button>
+        <button [ngClass]="{'active': isSelected('dairy', 'Cheese')}" (click)="toggleFood('dairy', 'Cheese')">Cheese</button>
+        <button [ngClass]="{'active': isSelected('dairy', 'Almond milk')}" (click)="toggleFood('dairy', 'Almond milk')">Almond milk</button>
+        <button [ngClass]="{'active': isSelected('dairy', 'Coconut milk')}" (click)="toggleFood('dairy', 'Coconut milk')">Coconut milk</button>
+        <button [ngClass]="{'active': isSelected('dairy', 'Soy milk')}" (click)="toggleFood('dairy', 'Soy milk')">Soy milk</button>
       </div>
     </div>
 
+    <!-- Fruits -->
     <div class="section">
       <div class="header">
         <h3>Fruits</h3>
-        <button class="select-all">Select all</button>
+        <button class="select-all" (click)="selectAll('fruit')">Select all</button>
       </div>
       <div class="options">
-        <button>Banana</button>
-        <button>Strawberry</button>
-        <button>Apple</button>
-        <button>Blueberry</button>
-        <button>Pineapple</button>
-        <button>Papaya</button>
-        <button>Mandarine</button>
-        <button>Orange</button>
-        <button>Kiwi</button>
-        <button>Mango</button>
-        <button>Watermelon</button>
-        <button>Pear</button>
-        <button>Peach</button>
-        <button>Grapes</button>
-        <button>Melon</button>
-        <button>Passion fruit</button>
+        <button [ngClass]="{'active': isSelected('fruit', 'Banana')}" (click)="toggleFood('fruit', 'Banana')">Banana</button>
+        <button [ngClass]="{'active': isSelected('fruit', 'Strawberry')}" (click)="toggleFood('fruit', 'Strawberry')">Strawberry</button>
+        <button [ngClass]="{'active': isSelected('fruit', 'Apple')}" (click)="toggleFood('fruit', 'Apple')">Apple</button>
+        <button [ngClass]="{'active': isSelected('fruit', 'Blueberry')}" (click)="toggleFood('fruit', 'Blueberry')">Blueberry</button>
+        <button [ngClass]="{'active': isSelected('fruit', 'Pineapple')}" (click)="toggleFood('fruit', 'Pineapple')">Pineapple</button>
+        <button [ngClass]="{'active': isSelected('fruit', 'Papaya')}" (click)="toggleFood('fruit', 'Papaya')">Papaya</button>
+        <button [ngClass]="{'active': isSelected('fruit', 'Mandarine')}" (click)="toggleFood('fruit', 'Mandarine')">Mandarine</button>
+        <button [ngClass]="{'active': isSelected('fruit', 'Orange')}" (click)="toggleFood('fruit', 'Orange')">Orange</button>
+        <button [ngClass]="{'active': isSelected('fruit', 'Kiwi')}" (click)="toggleFood('fruit', 'Kiwi')">Kiwi</button>
+        <button [ngClass]="{'active': isSelected('fruit', 'Mango')}" (click)="toggleFood('fruit', 'Mango')">Mango</button>
+        <button [ngClass]="{'active': isSelected('fruit', 'Watermelon')}" (click)="toggleFood('fruit', 'Watermelon')">Watermelon</button>
+        <button [ngClass]="{'active': isSelected('fruit', 'Pear')}" (click)="toggleFood('fruit', 'Pear')">Pear</button>
+        <button [ngClass]="{'active': isSelected('fruit', 'Peach')}" (click)="toggleFood('fruit', 'Peach')">Peach</button>
+        <button [ngClass]="{'active': isSelected('fruit', 'Grapes')}" (click)="toggleFood('fruit', 'Grapes')">Grapes</button>
+        <button [ngClass]="{'active': isSelected('fruit', 'Melon')}" (click)="toggleFood('fruit', 'Melon')">Melon</button>
+        <button [ngClass]="{'active': isSelected('fruit', 'Passion fruit')}" (click)="toggleFood('fruit', 'Passion fruit')">Passion fruit</button>
       </div>
     </div>
 

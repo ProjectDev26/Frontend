@@ -14,4 +14,8 @@ export class ProgramsComponent {
   navigateToTraining(){
     this.router.navigate(['profile/programs/training']).then();
   }
+
+  goBack(): void {
+    this.router.navigate(['profile']).then();
+  }
 }

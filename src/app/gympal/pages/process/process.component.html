@@ -1,8 +1,9 @@
 <div class="container-process">
-
   <div class="img">
     <img src="/assets/process.png">
-    <button (click)="navigateToAnalysis()">See analysis</button>
+    <div class="button-container">
+      <button (click)="goBack()" class="back-button">Back</button>
+      <button (click)="navigateToAnalysis()" class="see-analysis-button">See analysis</button>
+    </div>
   </div>
-
 </div>

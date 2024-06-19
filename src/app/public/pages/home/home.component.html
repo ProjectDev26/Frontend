@@ -2,19 +2,20 @@
 <div class="container">
   <h2>Goals!</h2>
   <div class="button-container">
-    <button class="goal-button">
+    <button class="goal-button" [ngClass]="{'active': selectedGoalIndex === 0}" (click)="selectGoal(0)">
       <h3>Loss weight</h3>
       <p>Maximize fat loss and preserve your muscle mass.</p>
     </button>
-    <button class="goal-button">
+    <button class="goal-button" [ngClass]="{'active': selectedGoalIndex === 1}" (click)="selectGoal(1)">
       <h3>Maintain weight</h3>
       <p>Preserve your physical fitness and stay healthy.</p>
     </button>
-    <button class="goal-button">
+    <button class="goal-button" [ngClass]="{'active': selectedGoalIndex === 2}" (click)="selectGoal(2)">
       <h3>Gain muscle</h3>
       <p>Increase your muscle mass and become stronger.</p>
     </button>
   </div>
   <button class="continue" (click)="navigateToGoal()">Continue</button>
 </div>
+
 </body>

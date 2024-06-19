@@ -2,10 +2,11 @@
   width: 90%;
   margin: auto;
   max-width: 1200px;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .body {
@@ -46,4 +47,24 @@
 
 .img {
   width: 100%;
+}
+
+.back-button {
+  width: 200px;
+  background: #163F6F;
+  border: none;
+  color: #fff;
+  border-radius: 25px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #31408A;
+}
+
+.button-flex {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
 }

@@ -8,10 +8,16 @@ import {ActivatedRoute, Router} from "@angular/router";
 })
 export class HomeComponent {
 
+  selectedGoalIndex: number | null = null;
+
   constructor(private router: Router) { }
 
   navigateToGoal(){
     this.router.navigate(['goal']).then();
+  }
+
+  selectGoal(index: number): void {
+    this.selectedGoalIndex = index;
   }
 
 }

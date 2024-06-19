@@ -46,6 +46,10 @@ h2 {
   border-radius: 5px;
   cursor: pointer;
 }
+.select-all:hover {
+  background-color: #42507D;
+  color: #fff;
+}
 
 .options {
   display: flex;
@@ -64,6 +68,12 @@ h2 {
 .options button:hover {
   background: #42507D;
 }
+
+.options button.active {
+  background-color: #42507D;
+  color: #fff;
+}
+
 
 .continue {
   background-color: #42507D;

@@ -15,3 +15,23 @@
   font-weight: bolder;
   margin-top: 30px;
 }
+
+.back-button {
+  width: 200px;
+  background: #163F6F;
+  border: none;
+  color: #fff;
+  border-radius: 25px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #31408A;
+}
+
+.button-flex {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}

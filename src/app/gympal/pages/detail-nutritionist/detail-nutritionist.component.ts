@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {GymsApiService} from "../../services/gyms-api.service";
-import {ActivatedRoute} from "@angular/router";
+import {ActivatedRoute, Router} from "@angular/router";
 import {Nutritionist} from "../../model/nutritionist.entity";
 import {MatCard} from "@angular/material/card";
 import {MatAnchor} from "@angular/material/button";
@@ -20,7 +20,7 @@ export class DetailNutritionistComponent {
   nutritionist: Nutritionist;
   nutritionistId = '';
 
-  constructor(private gymApi: GymsApiService, private route: ActivatedRoute) {
+  constructor(private gymApi: GymsApiService, private route: ActivatedRoute, private router: Router) {
     this.nutritionist = new Nutritionist();
   }
 
@@ -32,6 +32,10 @@ export class DetailNutritionistComponent {
     this.gymApi.getNutritionistsById(this.nutritionistId).subscribe((data: any)=>{
       this.nutritionist = data[0];
     });
+  }
+
+  goBack(): void {
+    this.router.navigate(['home']).then();
   }
 
 }

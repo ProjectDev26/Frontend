@@ -18,4 +18,12 @@ export class ProfileComponent {
   navigateToPremium(){
     this.router.navigate(['profile/premium']).then();
   }
+
+  navigateToRenew() {
+    this.router.navigate(['subscriptions']).then();
+  }
+
+  navigateToHome() {
+    this.router.navigate(['home']).then();
+  }
 }

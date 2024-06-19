@@ -13,4 +13,8 @@ export class ProcessComponent {
   navigateToAnalysis() {
     this.router.navigate(['profile/premium/process/analysis']).then();
   }
+
+  goBack(): void {
+    this.router.navigate(['profile/premium']).then();
+  }
 }

@@ -54,6 +54,12 @@ h2 {
   background-color: #f0f0f0;
 }
 
+.goal-button.active {
+  background-color: #c0c0c0;
+  border-color: #000;
+}
+
+
 .continue {
   background-color: #42507D;
   color: #fff;

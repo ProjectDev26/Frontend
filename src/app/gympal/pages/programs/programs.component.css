@@ -1,11 +1,6 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #d3d3d3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
+.content-programs {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .container {
@@ -46,4 +41,24 @@ body {
 
 .card button:hover {
   background-color: #2a3f7e;
+}
+
+.back-button {
+  width: 200px;
+  background: #163F6F;
+  border: none;
+  color: #fff;
+  border-radius: 25px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #31408A;
+}
+
+.button-flex {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
 }

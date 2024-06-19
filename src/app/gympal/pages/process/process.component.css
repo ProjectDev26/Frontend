@@ -17,7 +17,13 @@
   border-radius: 25px;
 }
 
-.img button {
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.see-analysis-button, .back-button {
   width: 200px;
   background: #163F6F;
   border: none;
@@ -27,6 +33,6 @@
   cursor: pointer;
 }
 
-.img button:hover {
+.see-analysis-button:hover, .back-button:hover {
   background: #42507D;
 }
