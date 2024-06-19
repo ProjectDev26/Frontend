@@ -38,4 +38,8 @@ export class DetailNutritionistComponent {
     this.router.navigate(['home']).then();
   }
 
+  navigateToContact() {
+    this.router.navigate(['contact-form']).then();
+  }
+
 }
