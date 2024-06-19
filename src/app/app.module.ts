@@ -23,6 +23,19 @@ import {DetailCoachComponent} from "./gympal/pages/detail-coach/detail-coach.com
 import {SuscriptionsComponent} from "./gympal/pages/suscriptions/suscriptions.component";
 import { ProfileComponent } from './gympal/pages/profile/profile.component';
 import {MatMenu, MatMenuItem, MatMenuTrigger} from "@angular/material/menu";
+import { TestimonialsWriteComponent } from './gympal/pages/testimonials-write/testimonials-write.component';
+import { HomeGoalNextComponent } from './gympal/pages/home-goal-next/home-goal-next.component';
+import { PaymentsComponent } from './gympal/pages/payments/payments.component';
+import { ProgramsComponent } from './gympal/pages/programs/programs.component';
+import { ProgramsTrainingComponent } from './gympal/pages/programs-training/programs-training.component';
+import { FaqComponent } from './gympal/pages/faq/faq.component';
+import { ComplainsDoubtsComponent } from './gympal/pages/complains-doubts/complains-doubts.component';
+import { StrengthTrainingChallengeComponent } from './gympal/pages/strength-training-challenge/strength-training-challenge.component';
+import { PremiumComponent } from './gympal/pages/premium/premium.component';
+import { ChallengeComponent } from './gympal/pages/challenge/challenge.component';
+import { ExclusiveContentComponent } from './gympal/pages/exclusive-content/exclusive-content.component';
+import { ProcessComponent } from './gympal/pages/process/process.component';
+import { AnalysisComponent } from './gympal/pages/analysis/analysis.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +49,20 @@ import {MatMenu, MatMenuItem, MatMenuTrigger} from "@angular/material/menu";
     ListNutritionistsComponent,
     DetailCoachComponent,
     SuscriptionsComponent,
-    ProfileComponent
+    ProfileComponent,
+    TestimonialsWriteComponent,
+    HomeGoalNextComponent,
+    PaymentsComponent,
+    ProgramsComponent,
+    ProgramsTrainingComponent,
+    FaqComponent,
+    ComplainsDoubtsComponent,
+    StrengthTrainingChallengeComponent,
+    PremiumComponent,
+    ChallengeComponent,
+    ExclusiveContentComponent,
+    ProcessComponent,
+    AnalysisComponent
   ],
   imports: [
     BrowserModule,

@@ -14,6 +14,21 @@ import {TestimonialsComponent} from "./gympal/pages/testimonials/testimonials.co
 import {FoodSelectionComponent} from "./gympal/pages/food-selection/food-selection.component";
 import {ActivityLevelComponent} from "./gympal/pages/activity-level/activity-level.component";
 import {HomeGoalComponent} from "./gympal/pages/home-goal/home-goal.component";
+import {TestimonialsWriteComponent} from "./gympal/pages/testimonials-write/testimonials-write.component";
+import {HomeGoalNextComponent} from "./gympal/pages/home-goal-next/home-goal-next.component";
+import {PaymentsComponent} from "./gympal/pages/payments/payments.component";
+import {ProgramsComponent} from "./gympal/pages/programs/programs.component";
+import {ProgramsTrainingComponent} from "./gympal/pages/programs-training/programs-training.component";
+import {FaqComponent} from "./gympal/pages/faq/faq.component";
+import {ComplainsDoubtsComponent} from "./gympal/pages/complains-doubts/complains-doubts.component";
+import {
+  StrengthTrainingChallengeComponent
+} from "./gympal/pages/strength-training-challenge/strength-training-challenge.component";
+import {PremiumComponent} from "./gympal/pages/premium/premium.component";
+import {ChallengeComponent} from "./gympal/pages/challenge/challenge.component";
+import {ExclusiveContentComponent} from "./gympal/pages/exclusive-content/exclusive-content.component";
+import {ProcessComponent} from "./gympal/pages/process/process.component";
+import {AnalysisComponent} from "./gympal/pages/analysis/analysis.component";
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -23,12 +38,25 @@ const routes: Routes = [
   {path: 'detail-coach/:id', component: DetailCoachComponent},
   {path: 'detail-nutritionist/:id', component: DetailNutritionistComponent},
   {path: 'subscriptions', component: SuscriptionsComponent},
+  {path: 'subscriptions/payments', component: PaymentsComponent},
   {path: 'community', component: CommunityComponent},
   {path: 'testimonials', component: TestimonialsComponent},
+  {path: 'testimonials/write', component: TestimonialsWriteComponent},
   {path: 'food-selection', component: FoodSelectionComponent},
   {path: 'activity-level', component: ActivityLevelComponent},
   {path: 'goal', component: HomeGoalComponent},
+  {path: 'goal/next', component: HomeGoalNextComponent},
   {path: 'profile', component: ProfileComponent},
+  {path: 'profile/programs', component: ProgramsComponent},
+  {path: 'profile/programs/training', component: ProgramsTrainingComponent},
+  {path: 'profile/premium', component: PremiumComponent},
+  {path: 'profile/premium/process', component: ProcessComponent},
+  {path: 'profile/premium/process/analysis', component: AnalysisComponent},
+  {path: 'profile/premium/exclusive-content', component: ExclusiveContentComponent},
+  {path: 'profile/premium/challenge', component: ChallengeComponent},
+  {path: 'help-center', component: FaqComponent},
+  {path: 'complains-doubts', component: ComplainsDoubtsComponent},
+  {path: 'strength-training-challenge', component: StrengthTrainingChallengeComponent},
   {path: '**', component: PageNotFoundComponent},
 ];
 
