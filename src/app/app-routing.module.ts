@@ -29,6 +29,7 @@ import {ChallengeComponent} from "./gympal/pages/challenge/challenge.component";
 import {ExclusiveContentComponent} from "./gympal/pages/exclusive-content/exclusive-content.component";
 import {ProcessComponent} from "./gympal/pages/process/process.component";
 import {AnalysisComponent} from "./gympal/pages/analysis/analysis.component";
+import {ContactFormComponent} from "./gympal/pages/contact-form/contact-form.component";
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -47,6 +48,7 @@ const routes: Routes = [
   {path: 'goal', component: HomeGoalComponent},
   {path: 'goal/next', component: HomeGoalNextComponent},
   {path: 'profile', component: ProfileComponent},
+  {path: 'contact-form', component: ContactFormComponent},
   {path: 'profile/programs', component: ProgramsComponent},
   {path: 'profile/programs/training', component: ProgramsTrainingComponent},
   {path: 'profile/premium', component: PremiumComponent},

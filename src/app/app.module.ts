@@ -36,6 +36,7 @@ import { ChallengeComponent } from './gympal/pages/challenge/challenge.component
 import { ExclusiveContentComponent } from './gympal/pages/exclusive-content/exclusive-content.component';
 import { ProcessComponent } from './gympal/pages/process/process.component';
 import { AnalysisComponent } from './gympal/pages/analysis/analysis.component';
+import { ContactFormComponent } from './gympal/pages/contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +63,8 @@ import { AnalysisComponent } from './gympal/pages/analysis/analysis.component';
     ChallengeComponent,
     ExclusiveContentComponent,
     ProcessComponent,
-    AnalysisComponent
+    AnalysisComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,
