@@ -10,4 +10,8 @@ export class SignInResponse {
     this.id = id;
   }
 
+  public getId(): number {
+    return this.id;
+  }
+
 }

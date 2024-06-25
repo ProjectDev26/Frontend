@@ -1,0 +1,113 @@
+.body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  background-color: #D9D9D9;
+}
+
+.container {
+  margin: 200px 40px;
+  background-color: #fff;
+  padding: 40px 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  min-width: 400px;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.sign-up-content {
+  text-align: left;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field {
+  margin-bottom: 20px;
+}
+
+input {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.error-message {
+  margin-top: 5px;
+  color: red;
+  font-size: 14px;
+}
+
+.terms {
+  display: flex;
+  font-size: 14px;
+  color: #666;
+}
+.form-field-terms {
+  width: 365px;
+  margin: auto auto 20px;
+}
+
+.check {
+  display: inline-block;
+  width: 20px;
+}
+
+.terms input {
+  margin-right: 10px;
+}
+
+.terms a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.form-actions {
+  text-align: center;
+}
+
+button {
+  padding: 15px 50px;
+  background-color: #42507D;
+  color: #D9D9D9;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+label {
+  font-size: 11px;
+}
+
+button:hover {
+  background-color: #3b4a70;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+a {
+  color: #163F6F;
+  text-decoration: none;
+}

@@ -30,9 +30,13 @@ import {ExclusiveContentComponent} from "./gympal/pages/exclusive-content/exclus
 import {ProcessComponent} from "./gympal/pages/process/process.component";
 import {AnalysisComponent} from "./gympal/pages/analysis/analysis.component";
 import {ContactFormComponent} from "./gympal/pages/contact-form/contact-form.component";
+import {SignInComponent} from "./iam/pages/sign-in/sign-in.component";
+import {SignUpComponent} from "./iam/pages/sign-up/sign-up.component";
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: '', redirectTo: 'home', pathMatch: 'full'},
+  { path: 'sign-in', component: SignInComponent },
+  { path: 'sign-up', component: SignUpComponent},
   {path: 'professionals', component: ProfessionalsComponent},
   {path: 'list-coaches', component: ListCoachesComponent},
   {path: 'list-nutritionists', component: ListNutritionistsComponent},

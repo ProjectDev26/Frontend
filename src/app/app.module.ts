@@ -7,12 +7,12 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { AboutComponent } from './public/pages/about/about.component';
 import { HomeComponent } from './public/pages/home/home.component';
 import { PageNotFoundComponent } from './public/pages/page-not-found/page-not-found.component';
-import {MatToolbar} from "@angular/material/toolbar";
-import {MatAnchor, MatButton} from "@angular/material/button";
+import {MatToolbar, MatToolbarModule} from "@angular/material/toolbar";
+import {MatAnchor, MatButton, MatButtonModule} from "@angular/material/button";
 import { FooterContentComponent } from './public/components/footer-content/footer-content.component';
 import {MatCard, MatCardContent, MatCardHeader, MatCardModule} from "@angular/material/card";
 import {NgOptimizedImage} from "@angular/common";
-import {HttpClientModule} from "@angular/common/http";
+import {HttpClientModule, provideHttpClient, withInterceptors} from "@angular/common/http";
 import {CoachDataService} from "./gympal/services/coach-data.service";
 import {GymsApiService} from "./gympal/services/gyms-api.service";
 import {MatIcon} from "@angular/material/icon";
@@ -37,6 +37,17 @@ import { ExclusiveContentComponent } from './gympal/pages/exclusive-content/excl
 import { ProcessComponent } from './gympal/pages/process/process.component';
 import { AnalysisComponent } from './gympal/pages/analysis/analysis.component';
 import { ContactFormComponent } from './gympal/pages/contact-form/contact-form.component';
+import { AuthenticationSectionComponent } from './iam/components/authentication-section/authentication-section.component';
+import { SignInComponent } from './iam/pages/sign-in/sign-in.component';
+import { SignUpComponent } from './iam/pages/sign-up/sign-up.component';
+import {MatFormField} from "@angular/material/form-field";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {MatInputModule} from "@angular/material/input";
+import {MatTableModule} from "@angular/material/table";
+import {MatGridListModule} from "@angular/material/grid-list";
+import {authenticationInterceptor} from "./iam/services/authentication.interceptor";
+import {ProfileApiService} from "./gympal/services/profile-api.service";
 
 @NgModule({
   declarations: [
@@ -64,15 +75,26 @@ import { ContactFormComponent } from './gympal/pages/contact-form/contact-form.c
     ExclusiveContentComponent,
     ProcessComponent,
     AnalysisComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    AuthenticationSectionComponent,
+    SignInComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
     MatToolbar,
+    MatButtonModule,
+    MatTableModule,
+    MatToolbarModule,
+    MatCardModule,
     MatAnchor,
     MatCardHeader,
-    MatCardModule,
     MatCardContent,
     NgOptimizedImage,
     MatButton,
@@ -80,12 +102,17 @@ import { ContactFormComponent } from './gympal/pages/contact-form/contact-form.c
     MatIcon,
     MatMenuItem,
     MatMenuTrigger,
-    MatMenu
+    MatMenu,
+    MatFormField,
+    ReactiveFormsModule,
+    MatGridListModule
   ],
   providers: [
     provideAnimationsAsync(),
+    provideHttpClient(withInterceptors([authenticationInterceptor])),
     CoachDataService,
-    GymsApiService
+    GymsApiService,
+    ProfileApiService
   ],
   bootstrap: [AppComponent]
 })

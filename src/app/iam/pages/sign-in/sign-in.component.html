@@ -1,0 +1,26 @@
+<div class="body">
+  <div class="container">
+    <h1>Welcome to FlexPal</h1>
+    <p>To use the application, please log in</p>
+    <div class="sign-up-content">
+      <form [formGroup]="form" (submit)="onSubmit()">
+        <div class="form-field">
+          <input placeholder="Username" id="username" name="username" required formControlName="username">
+          <div *ngIf="isInvalidControl(form, 'username')" class="error-message">
+            {{ errorMessagesForControl(form, 'username') }}
+          </div>
+        </div>
+
+        <div class="form-field">
+          <input type="password" placeholder="Password" id="password" name="password" required formControlName="password">
+          <div *ngIf="isInvalidControl(form, 'password')" class="error-message">
+            {{ errorMessagesForControl(form, 'password') }}
+          </div>
+        </div>
+        <div class="form-actions">
+          <button type="submit">Log in</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

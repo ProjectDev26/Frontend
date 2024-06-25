@@ -1,0 +1,48 @@
+<div class="body">
+  <div class="container">
+    <h1>Welcome to FlexPal</h1>
+      <p>To use the application, please <a href="#">log in</a> or register</p>
+    <div class="sign-up-content">
+      <form [formGroup]="form" (submit)="onSubmit()">
+        <div class="form-field">
+          <input placeholder="Username" id="username" name="username" required formControlName="username">
+          <div *ngIf="isInvalidControl(form, 'username')" class="error-message">
+            {{ errorMessagesForControl(form, 'username') }}
+          </div>
+        </div>
+        <div class="form-field">
+          <input placeholder="First Name" id="firstName" name="firstName" required formControlName="firstName">
+          <div *ngIf="isInvalidControl(form, 'firstName')" class="error-message">
+            {{ errorMessagesForControl(form, 'firstName') }}
+          </div>
+        </div>
+        <div class="form-field">
+          <input placeholder="Last Name" id="lastName" name="lastName" required formControlName="lastName">
+          <div *ngIf="isInvalidControl(form, 'lastName')" class="error-message">
+            {{ errorMessagesForControl(form, 'lastName') }}
+          </div>
+        </div>
+        <div class="form-field">
+          <input placeholder="Email" id="email" name="email" required formControlName="email">
+          <div *ngIf="isInvalidControl(form, 'email')" class="error-message">
+            {{ errorMessagesForControl(form, 'email') }}
+          </div>
+        </div>
+        <div class="form-field">
+          <input type="password" placeholder="Password" id="password" name="password" required formControlName="password">
+          <div *ngIf="isInvalidControl(form, 'password')" class="error-message">
+            {{ errorMessagesForControl(form, 'password') }}
+          </div>
+        </div>
+        <div class="form-field-terms">
+          <input class="check" type="checkbox" id="terms" required formControlName="terms">
+          <label for="terms">I’ve read and accept the <a href="#">Terms and Conditions</a> and <a href="#">Privacy policy</a></label>
+        </div>
+        <div class="form-actions">
+          <button type="submit">Create account</button>
+        </div>
+      </form>
+      <p class="login-link"><a href="#">Already have an account?</a></p>
+    </div>
+  </div>
+</div>

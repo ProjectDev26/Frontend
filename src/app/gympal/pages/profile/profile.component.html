@@ -10,9 +10,9 @@
       <button class="programs-button" (click)="navigateToPrograms()">Programs</button>
     </div>
     <div class="profile-details-section">
-      <p><strong style="font-size: 18px">Name:</strong> Jhon Salas <a href="#">Change name</a></p>
-      <p><strong style="font-size: 18px">Email:</strong> salJHONasyahoo.com <a href="#">Change email</a></p>
-      <p><strong style="font-size: 18px">Password:</strong> •••••••• <a href="#">Change password</a></p>
+      <p><strong style="font-size: 18px">Name:</strong> {{ profile.firstName }} <a href="#">Change name</a></p>
+      <p><strong style="font-size: 18px">Email:</strong> {{ profile.email }}<a href="#">Change email</a></p>
+      <p><strong style="font-size: 18px">Password:</strong> ••••••• <a href="#">Change password</a></p>
       <p><strong style="font-size: 18px">Account:</strong> <a href="#" class="delete-account">Delete account</a></p>
     </div>
   </div>
