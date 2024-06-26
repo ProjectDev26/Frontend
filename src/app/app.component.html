@@ -17,9 +17,14 @@
     <li class="nav-item">
       <app-authentication-section></app-authentication-section>
     </li>
-    <li class="nav-item">
+    <!--<li class="nav-item">
       <a mat-button class="routes-pages" [routerLink]="'/profile'">{{ currentProfile?.firstName }}</a>
-    </li>
+    </li>-->
+    <ng-container *ngIf="isSignedIn">
+      <li class="nav-item">
+        <a mat-button class="routes-pages" [routerLink]="'/profile'">{{ currentProfile?.firstName }}</a>
+      </li>
+    </ng-container>
 
   </ul>
 </mat-toolbar>
