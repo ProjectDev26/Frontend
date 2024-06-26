@@ -9,7 +9,8 @@ import {SignUpResponse} from "../model/sign-up.response";
 
 @Injectable({providedIn: 'root'})
 export class AuthenticationService {
-  basePath: string = "http://localhost:8080/api/v1";
+  //basePath: string = "http://localhost:8080/api/v1";
+  basePath: string = "https://flex-pal-backend-d7986c9ae6c4.herokuapp.com/api/v1";
   httpOptions = { headers: new HttpHeaders({'Content-type': 'application/json'}) };
 
   private signedIn: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);

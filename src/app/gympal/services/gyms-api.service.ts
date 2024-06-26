@@ -6,7 +6,7 @@ import {HttpClient} from "@angular/common/http";
 })
 export class GymsApiService {
   //http://localhost:8080/api/v1/coach-professional/2
-  baseUrl = 'http://localhost:8080/api/v1';
+  baseUrl = 'https://flex-pal-backend-d7986c9ae6c4.herokuapp.com/api/v1';
   baseUrlN = 'https://my-json-server.typicode.com/notfakeangel26/gympal';
 
   constructor(private http: HttpClient) { }

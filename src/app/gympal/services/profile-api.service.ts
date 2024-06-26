@@ -7,7 +7,7 @@ import {Profile} from "../model/profile.entity";
 })
 export class ProfileApiService {
 
-  baseUrl = 'http://localhost:8080/api/v1/profiles'
+  baseUrl = 'https://flex-pal-backend-d7986c9ae6c4.herokuapp.com/api/v1/profiles'
 
   constructor(private http: HttpClient) { }
 
