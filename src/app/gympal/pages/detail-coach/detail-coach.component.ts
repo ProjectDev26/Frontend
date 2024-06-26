@@ -24,7 +24,7 @@ export class DetailCoachComponent {
     });
 
     this.gymApi.getCoachById(this.coachId).subscribe((data: any)=>{
-      this.coach = data[0];
+      this.coach = data;
     });
   }
 

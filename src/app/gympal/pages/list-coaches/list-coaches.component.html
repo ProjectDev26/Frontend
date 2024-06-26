@@ -8,10 +8,10 @@
     <mat-card-content class="custom-card-content">
         <div class="card-title-group">
             <div class="image-container">
-                <img src="/assets/iconouser.jpg" alt="{{ coach.name }}" class="coach-image">
+                <img src="/assets/iconouser.jpg" alt="{{ coach.firstName }}" class="coach-image">
             </div>
             <div class="coach-info">
-                <a class="coach-name" (click)="onCoachSelected(coach)">{{ coach.name }}</a>
+                <a class="coach-name" (click)="onCoachSelected(coach)">{{ coach.firstName }} {{ coach.lastName }}</a>
                 <div class="coach-email">{{ coach.phrase }}</div>
             </div>
         </div>

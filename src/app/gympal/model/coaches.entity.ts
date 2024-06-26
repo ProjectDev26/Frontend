@@ -1,15 +1,15 @@
 export class Coaches {
   id: number;
-  name: string;
+  firstName: string;
+  lastName: string;
   email: string;
   phrase: string;
-  longPhrases: string;
 
   constructor() {
     this.id = 0;
-    this.name = "";
-    this.email = "";
+    this.firstName = "";
+    this.lastName = "";
     this.phrase = "";
-    this.longPhrases = "";
+    this.email = "";
   }
 }
