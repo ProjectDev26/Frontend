@@ -8,25 +8,24 @@ import {HttpClient, HttpHeaders} from "@angular/common/http";
 export class BaseService<T> {
 
   basePath: string = `${environment.serverBasePath}`;
-  resourceEndpoint: string = `/resources`;
-
+  resourceEdndpoint: string = `/resources`;
   httpOptions = {
     headers: new HttpHeaders({
-      'Content-Type': 'application/json'
+      'content-type': 'application/json'
     })
-  };
-
-  constructor(public http: HttpClient) {}
-
-  private resourcePath() {
-    return `${this.basePath}${this.resourceEndpoint}`;
   }
 
-  getAll() {
+  constructor(public http: HttpClient) { }
+
+  private resourcePath(){
+    return `${this.basePath}${this.resourceEdndpoint}`;
+  }
+
+  getAll(){
     return this.http.get<T>(this.resourcePath(), this.httpOptions);
   }
 
-  create(item: any) {
+  create(item: any){
     return this.http.post<T>(this.resourcePath(), JSON.stringify(item), this.httpOptions);
   }
 
