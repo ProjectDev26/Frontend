@@ -1,3 +1,3 @@
-export const environment = {
-  serverBasePath: undefined
-};
+  export const environment = {
+    serverBasePath: undefined
+  };
