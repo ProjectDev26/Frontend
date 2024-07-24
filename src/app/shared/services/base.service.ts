@@ -15,7 +15,7 @@ export class BaseService<T> {
     })
   }
 
-  constructor(private http: HttpClient) { }
+  constructor(public http: HttpClient) { }
 
   private resourcePath(){
     return `${this.basePath}${this.resourceEdndpoint}`;
@@ -23,5 +23,13 @@ export class BaseService<T> {
 
   getAll(){
     return this.http.get<T>(this.resourcePath(), this.httpOptions);
+  }
+
+  create(item: any){
+    return this.http.post<T>(this.resourcePath(), JSON.stringify(item), this.httpOptions);
+  }
+
+  getById(id: string) {
+    return this.http.get<T>(`${this.resourcePath()}/${id}`, this.httpOptions);
   }
 }

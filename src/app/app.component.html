@@ -4,31 +4,31 @@
   <div class="mat-spacer"></div>
 
   <ul class="nav-list">
-    <li class="nav-item"><a mat-button class="routes-page color" [routerLink]="'/home'">Home</a></li>
-    <li class="nav-item"><a mat-button class="routes-page color" [routerLink]="'/subscriptions'">Renew</a></li>
-    <li class="nav-item"><a mat-button class="routes-page color" [routerLink]="'/professionals'">Professionals</a></li>
-    <li class="nav-item">
-      <a mat-button class="routes-page color" [matMenuTriggerFor]="professionalsMenu">Forum and Experiences</a>
-      <mat-menu #professionalsMenu="matMenu">
-        <button mat-menu-item [routerLink]="'/community'">Community</button>
-        <button mat-menu-item [routerLink]="'/testimonials'">Testimonials</button>
-      </mat-menu>
-    </li>
-    <li class="nav-item">
-      <app-authentication-section></app-authentication-section>
-    </li>
-    <!--<li class="nav-item">
-      <a mat-button class="routes-pages" [routerLink]="'/profile'">{{ currentProfile?.firstName }}</a>
-    </li>-->
-    <ng-container *ngIf="isSignedIn">
+    <ng-container *ngIf="isSignedIn; else notSignedIn">
+      <li class="nav-item"><a mat-button class="routes-page color" [routerLink]="'/home'">Home</a></li>
+      <li class="nav-item"><a mat-button class="routes-page color" [routerLink]="'/subscriptions'">Renew</a></li>
+      <li class="nav-item"><a mat-button class="routes-page color" [routerLink]="'/professionals'">Professionals</a></li>
+      <li class="nav-item">
+        <a mat-button class="routes-page color" [matMenuTriggerFor]="professionalsMenu">Forum and Experiences</a>
+        <mat-menu #professionalsMenu="matMenu">
+          <button mat-menu-item [routerLink]="'/community'">Community</button>
+          <button mat-menu-item [routerLink]="'/testimonials'">Testimonials</button>
+        </mat-menu>
+      </li>
+      <li class="nav-item">
+        <app-authentication-section></app-authentication-section>
+      </li>
       <li class="nav-item">
         <a mat-button class="routes-pages" [routerLink]="'/profile'">{{ currentProfile?.firstName }}</a>
       </li>
     </ng-container>
-
+    <ng-template #notSignedIn>
+      <li class="nav-item">
+        <app-authentication-section></app-authentication-section>
+      </li>
+    </ng-template>
   </ul>
 </mat-toolbar>
-
 
 <router-outlet></router-outlet>
 <app-footer-content></app-footer-content>

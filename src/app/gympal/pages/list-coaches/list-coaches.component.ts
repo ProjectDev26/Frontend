@@ -1,31 +1,32 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Coaches} from "../../model/coaches.entity";
-import {GymsApiService} from "../../../gympal/services/gyms-api.service";
 import {Router} from "@angular/router";
-import {CoachDataService} from "../../../gympal/services/coach-data.service";
+import {CoachesService} from "../../services/coaches.service";
 
 @Component({
   selector: 'app-list-coaches',
   templateUrl: './list-coaches.component.html',
   styleUrl: './list-coaches.component.css'
 })
-export class ListCoachesComponent {
+export class ListCoachesComponent implements OnInit{
 
   coaches: Array<Coaches> = [];
 
-  constructor(private gymApi: GymsApiService, private router: Router, private coachDataService: CoachDataService) {
+  constructor(private router: Router, private coachDataService: CoachesService) {
   }
 
   ngOnInit(){
-    this.gymApi.getCoaches()
-      .subscribe((data: any)=>{
-        this.coaches = data;
-      });
+    this.getAllCoaches();
+  }
+
+  private getAllCoaches() {
+    this.coachDataService.getAll().subscribe((response: any) => {
+      this.coaches = response;
+    });
   }
 
   onCoachSelected(coach: any){
     this.router.navigate(['detail-coach', coach.id]).then();
-    //});
   }
 
 

@@ -1,14 +1,14 @@
-import {Component, OnInit} from '@angular/core';
-import {Profile} from "./gympal/model/profile.entity";
-import {AuthenticationService} from "./iam/services/authentication.service";
-import {ProfileApiService} from "./gympal/services/profile-api.service";
+import { Component, OnInit } from '@angular/core';
+import { Profile } from "./gympal/model/profile.entity";
+import { AuthenticationService } from "./iam/services/authentication.service";
+import { ProfileApiService } from "./gympal/services/profile-api.service";
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
 
   title = 'gymPal';
   isSignedIn: boolean = false;
@@ -26,10 +26,16 @@ export class AppComponent implements OnInit{
 
     this.authService.currentUserId.subscribe(userId => {
       if (userId) {
-        this.profileApiService.getProfileById(userId.toString()).subscribe(profile => {
+        this.profileApiService.getById(userId.toString()).subscribe(profile => {
           this.currentProfile = profile;
         });
-      }
+      } /*else {
+        this.currentProfile = null;
+      }*/
     });
   }
+
+  /*signOut(): void {
+    this.authService.signOut();
+  }*/
 }

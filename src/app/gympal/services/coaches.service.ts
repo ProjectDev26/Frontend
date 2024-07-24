@@ -10,6 +10,6 @@ export class CoachesService extends BaseService<Coaches>{
 
   constructor(http: HttpClient) {
     super(http);
-    this.resourceEdndpoint = '/coaches'
+    this.resourceEdndpoint = '/coach-professional'
   }
 }

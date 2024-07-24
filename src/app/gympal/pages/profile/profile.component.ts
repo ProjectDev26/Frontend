@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
-import {ActivatedRoute, Router} from "@angular/router";
 import {ProfileApiService} from "../../services/profile-api.service";
 import {Profile} from "../../model/profile.entity";
 import {AuthenticationService} from "../../../iam/services/authentication.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-profile',
@@ -12,7 +12,6 @@ import {AuthenticationService} from "../../../iam/services/authentication.servic
 export class ProfileComponent implements OnInit{
 
   profile: Profile = new Profile();
-  profileId = '';
 
   constructor(private router: Router, private profileApi: ProfileApiService,
               private authService: AuthenticationService) {
@@ -21,14 +20,11 @@ export class ProfileComponent implements OnInit{
   ngOnInit(): void {
     this.authService.currentUserId.subscribe(userId => {
       if (userId) {
-        this.profileApi.getProfileById(userId.toString()).subscribe((data: any) => {
+        this.profileApi.getById(userId.toString()).subscribe((data: any) => {
           this.profile = data;
         });
       }
     });
-    /*this.profileApi.getCurrentProfile().subscribe((data: Profile) => {
-      this.profile = data;
-    });*/
   }
 
   navigateToPrograms(){

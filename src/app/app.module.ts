@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
@@ -10,10 +9,9 @@ import { PageNotFoundComponent } from './public/pages/page-not-found/page-not-fo
 import {MatToolbar, MatToolbarModule} from "@angular/material/toolbar";
 import {MatAnchor, MatButton, MatButtonModule} from "@angular/material/button";
 import { FooterContentComponent } from './public/components/footer-content/footer-content.component';
-import {MatCard, MatCardContent, MatCardHeader, MatCardModule} from "@angular/material/card";
+import { MatCardContent, MatCardHeader, MatCardModule} from "@angular/material/card";
 import {NgOptimizedImage} from "@angular/common";
 import {HttpClientModule, provideHttpClient, withInterceptors} from "@angular/common/http";
-import {CoachDataService} from "./gympal/services/coach-data.service";
 import {GymsApiService} from "./gympal/services/gyms-api.service";
 import {MatIcon} from "@angular/material/icon";
 import {ProfessionalsComponent} from "./gympal/pages/professionals/professionals/professionals.component";
@@ -23,7 +21,6 @@ import {DetailCoachComponent} from "./gympal/pages/detail-coach/detail-coach.com
 import {SuscriptionsComponent} from "./gympal/pages/suscriptions/suscriptions.component";
 import { ProfileComponent } from './gympal/pages/profile/profile.component';
 import {MatMenu, MatMenuItem, MatMenuTrigger} from "@angular/material/menu";
-import { TestimonialsWriteComponent } from './gympal/pages/testimonials-write/testimonials-write.component';
 import { HomeGoalNextComponent } from './gympal/pages/home-goal-next/home-goal-next.component';
 import { PaymentsComponent } from './gympal/pages/payments/payments.component';
 import { ProgramsComponent } from './gympal/pages/programs/programs.component';
@@ -48,6 +45,7 @@ import {MatTableModule} from "@angular/material/table";
 import {MatGridListModule} from "@angular/material/grid-list";
 import {authenticationInterceptor} from "./iam/services/authentication.interceptor";
 import {ProfileApiService} from "./gympal/services/profile-api.service";
+import {TestimonialsApiService} from "./gympal/services/testimonials-api.service";
 
 @NgModule({
   declarations: [
@@ -62,7 +60,6 @@ import {ProfileApiService} from "./gympal/services/profile-api.service";
     DetailCoachComponent,
     SuscriptionsComponent,
     ProfileComponent,
-    TestimonialsWriteComponent,
     HomeGoalNextComponent,
     PaymentsComponent,
     ProgramsComponent,
@@ -78,7 +75,7 @@ import {ProfileApiService} from "./gympal/services/profile-api.service";
     ContactFormComponent,
     AuthenticationSectionComponent,
     SignInComponent,
-    SignUpComponent
+    SignUpComponent,
   ],
   imports: [
     BrowserModule,
@@ -110,9 +107,9 @@ import {ProfileApiService} from "./gympal/services/profile-api.service";
   providers: [
     provideAnimationsAsync(),
     provideHttpClient(withInterceptors([authenticationInterceptor])),
-    CoachDataService,
     GymsApiService,
-    ProfileApiService
+    ProfileApiService,
+    TestimonialsApiService
   ],
   bootstrap: [AppComponent]
 })

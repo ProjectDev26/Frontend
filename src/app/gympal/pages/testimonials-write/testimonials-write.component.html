@@ -2,8 +2,14 @@
 <div class="testimonial-form-container">
   <h2>Write a Testimonial!</h2>
   <p>This testimonial will be saved and published by the name of:</p>
-  <h1>Jhon Salas</h1>
-  <textarea placeholder="Start writing your testimonial..."></textarea>
-  <button (click)="navigateToTestimonials()">Publish</button>
+  <h1>{{ profile.firstName }} {{ profile.lastName }}</h1>
+
+  <form [formGroup]="testimonialForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="testimonial">Testimonial</label>
+      <textarea id="testimonial" formControlName="testimonial"></textarea>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
 </div>
 </body>

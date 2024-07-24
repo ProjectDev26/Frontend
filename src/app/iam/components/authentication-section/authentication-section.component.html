@@ -1,6 +1,5 @@
   <div *ngIf="isSignedIn; then authenticated else anonymous"></div>
   <ng-template #authenticated>
-    <!--<span style="color: white; margin-right: 20px" class="mat-body">{{ currentUserName }}</span>-->
     <button class="nav-item" mat-button (click)="onSignOut()">Sign Out</button>
   </ng-template>
   <ng-template #anonymous>
